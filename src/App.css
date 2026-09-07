@@ -1,0 +1,118 @@
+/* Global Reset & Base Styling */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pointer class for action icons */
+.pointer {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.pointer:hover {
+  opacity: 0.7;
+}
+
+/* Card Styling with subtle shadow */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 20px;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Form Inputs & Select Styling */
+.form-control,
+.form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.form-input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.font-size-13 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Responsive Table Styling */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  white-space: nowrap;
+  /* Mobile par text ko wrap hone se rokne ke liye taaki horizontal scroll aaye */
+}
+
+.table th {
+  font-weight: 600;
+  color: #495057;
+  background-color: #f1f3f5;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+  /* Mobile screens par form columns ko full width karne ke liye */
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start !important;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+}
+
+.font-size-13{
+  font-size: 13px;
+}
+
+.shadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* .pointer{
+  cursor: pointer;
+} */
