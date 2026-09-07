@@ -42,13 +42,21 @@ const ListEmp = () => {
                     <th className="text-center" scope="col">
                       NAME
                     </th>
-                    <th scope="col">ID</th>
-                    <th scope="col">EMAIL</th>
-                    <th scope="col">DESIGNATION</th>
+                    <th className="text-center" scope="col">
+                      ID
+                    </th>
+                    <th className="text-center" scope="col">
+                      EMAIL
+                    </th>
+                    <th className="text-center" scope="col">
+                      DESIGNATION
+                    </th>
                     <th className="text-center" scope="col">
                       PERFORMANCE
                     </th>
-                    <th scope="col">ACTION</th>
+                    <th className="text-center" scope="col">
+                      ACTION
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -56,10 +64,16 @@ const ListEmp = () => {
                     return (
                       <tr key={index + 1}>
                         <th className="text-center">{index + 1}</th>
-                        <td>{employee?.employeeName}</td>
-                        <td>{employee?.employeeId}</td>
-                        <td>{employee?.employeeEmail}</td>
-                        <td>{employee?.employeeDesignation}</td>
+                        <td className="text-center">
+                          {employee?.employeeName}
+                        </td>
+                        <td className="text-center">{employee?.employeeId}</td>
+                        <td className="text-center">
+                          {employee?.employeeEmail}
+                        </td>
+                        <td className="text-center">
+                          {employee?.employeeDesignation}
+                        </td>
                         <td className="text-center">
                           {employee?.employeePerformance}
                         </td>
